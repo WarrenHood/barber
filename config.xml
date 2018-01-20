@@ -20,5 +20,5 @@
  <preference name="orientation" value="portrait" />
   <preference name="fullscreen" value="true" />
   <preference name='uiwebviewbounce' value='false' />
-  <icon src='icon.png' height='50' width='50'/>
+  
 </widget>
