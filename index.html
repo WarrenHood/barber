@@ -11,19 +11,24 @@
 	<div id="menu">
 	  <center>
 	  <h1>Make your booking</h1>
-	  Name<br/><input size="20"><br/>
-	  Surname<br/><input size="20"><br/><br/>
-	  Cellphone number<br/><input size="20"><br/>
-	  Alternate number<br/><input size="20"><br/><br/>
+		<form action="https://formspree.io/nullbyte001@gmail.com"
+		  method="POST">
+	  Name<br/><input size="20" name="name"><br/>
+	  Surname<br/><input size="20" name="surname"><br/><br/>
+	  Cellphone number<br/><input size="20" name="cell"><br/>
+	  Alternate number<br/><input size="20" name="alternate cell"><br/><br/>
       Choose where you are:<br/>
-	  <input type="radio">Empangeni<br/>
-	  <input type="radio">Durban<br/>
-	  Address<textarea></textarea><br/><br/>
-	  Type of cut<br/><textarea></textarea><br/>
-	  <input type="checkbox">Beard shave<br/><br/>
-	  Email<input size=30><br/>
+	  <input type="checkbox" name="Empangeni" onclick="document.getElementsByName('Durban')[0].checked=false;">Empangeni<br/>
+	  <input type="checkbox" name="Durban" onclick="document.getElementsByName('Empangeni')[0].checked=false;">Durban<br/>
+	  Address<br/><textarea name="place"></textarea><br/><br/>
+	  Type of cut<br/><textarea name="cut"></textarea><br/>
+	  <input type="checkbox" name="beard shave">Beard shave<br/><br/>
+	  Email<input size=30 name="email address"><br/>
 	  Comment<br/>
-	  <textarea></textarea>
+	  <textarea name="comment"></textarea><br/>
+		  <input type="submit" value="Book">
+		  <input type="hidden" name="_next" value="/" />
+	  </form>
 	  </center>
 	</div>
 	<b><div id="menutoggle">.<br/>.<br/>.</div></b>
