@@ -20,5 +20,5 @@
  <preference name="orientation" value="portrait" />
   <preference name="fullscreen" value="true" />
   <preference name='uiwebviewbounce' value='false' />
-  
+<plugin name="cordova-plugin-email-composer" />
 </widget>
