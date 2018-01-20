@@ -1,0 +1,38 @@
+
+html { 
+height:100%;
+width:100%;
+overflow:hidden;
+  background: url('../images/background.jpg') center center fixed; 
+}
+#menutoggle{
+  background:rgba(0,50,200,0.5);
+  z-index:1;
+  height:fit-content;
+  width:50px;
+  border-top-right-radius:100%;
+  border-bottom-right-radius:100%;
+  font-size:5vh;
+  color:white;
+  text-align:center;
+  top:35vh;
+  position:absolute;
+}
+#menu{
+  position:absolute;
+  background:rgba(0,0,0,.8);
+  color:white;
+  overflow-y:auto;
+}
+#logo{
+  height:50%;
+  width:100%;
+}
+h1{
+  padding-left:50px;
+  font-size:2em;
+  font-weight:heavy;
+  color:white;
+  font-family:serif;
+  background:rgba(0,0,0,0.8)
+}
