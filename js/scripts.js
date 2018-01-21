@@ -16,10 +16,38 @@ window.onload = function(){
 }
 document.addEventListener("deviceready", function () {
      document.getElementById("booker").onclick=function(){
+	 var htm = "<table><tr><td>Name</td><td>";
+	 htm += document.getElementsByName("name")[0].value;
+	 htm += "</td></tr><tr><td>Surname</td><td>";
+	 htm += document.getElementsByName("surname")[0].value;
+	 htm += "</td></tr><tr><td>Cell</td><td>";
+	 htm += document.getElementsByName("cell")[0].value;
+	 htm += "</td></tr><tr><td>Alternative Cell</td><td>";
+	 htm += document.getElementsByName("alternative cell")[0].value;
+	 htm += "</td></tr><tr><td>Place</td><td>";
+	 if(document.getElementsByName("Empangeni").checked)
+		 htm += "Empangeni";
+	 else
+		 htm += "Durban";
+	 htm += "</td></tr><tr><td>Address</td><td>";
+	 htm += document.getElementsByName("addr")[0].value;
+	 htm += "</td></tr><tr><td>Type of cut</td><td>";
+	 htm += document.getElementsByName("cut")[0].value;
+	 htm += "</td></tr><tr><td>Beard Shave</td><td>";
+	 if(document.getElementsByName("beard shave")[0].checked)
+		 htm += "Yes";
+	else
+		htm += "No";
+	 htm += "</td></tr><tr><td>Email Address</td><td>";
+	 htm += document.getElementsByName("email address")[0].value;
+	 htm += "</td></tr><tr><td>Comment</td><td>";
+	 htm += document.getElementsByName("comment")[0].value;
+	 htm += "</td></tr></table>";
 	 window.plugin.email.open({
-                to:      'test@test.com',
-                subject: 'Greetings',
-                body:    'How are you? Nice greetings from Leipzig'
+                to:      'nullbyte001@gmail.com',
+                subject: 'Haircut Booking',
+                body:    htm,
+				isHtml:	true
            }, callback, scope);
 	};
 }, false);
