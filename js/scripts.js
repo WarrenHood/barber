@@ -16,34 +16,20 @@ window.onload = function(){
 }
 document.addEventListener("deviceready", function () {
      document.getElementById("booker").onclick=function(){
-	 cordova.plugins.email.open({
-   	 to:          "nullbyte001@gmail.com", // email addresses for TO field
-   	 subject:    "Booking", // subject of the email
-   	 body:       "", // email body (for HTML, set isHtml to true)
-   	 isHtml:    true
-		},function(){});
-	
-	};
-}, false);
-document.addEventListener('deviceready', function () {
-    cordova.plugins.email.isAvailable(
-        function (isAvailable) {
-
-            window.plugin.email.open({
+	 window.plugin.email.open({
                 to:      'test@test.com',
                 subject: 'Greetings',
                 body:    'How are you? Nice greetings from Leipzig'
            }, callback, scope);
         }
-    );
+	
+	};
 }, false);
-
 function callback(){
-    console.log("callback function");
+	;
 }
-
 function scope(){
-    console.log("scope function");
+	;
 }
 function mToggle(){
 	if(mstat==0){
