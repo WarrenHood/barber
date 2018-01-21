@@ -23,7 +23,7 @@ document.addEventListener("deviceready", function () {
 	 htm += "</td></tr><tr><td>Cell</td><td>";
 	 htm += document.getElementsByName("cell")[0].value;
 	 htm += "</td></tr><tr><td>Alternative Cell</td><td>";
-	 htm += document.getElementsByName("alternative cell")[0].value;
+	 htm += document.getElementsByName("alternate cell")[0].value;
 	 htm += "</td></tr><tr><td>Place</td><td>";
 	 if(document.getElementsByName("Empangeni").checked)
 		 htm += "Empangeni";
