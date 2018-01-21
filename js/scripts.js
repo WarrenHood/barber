@@ -21,7 +21,7 @@ document.addEventListener("deviceready", function () {
    	 subject:    "Booking", // subject of the email
    	 body:       "", // email body (for HTML, set isHtml to true)
    	 isHtml:    true
-		});
+		},function(){});
 	
 	};
 }, false);
