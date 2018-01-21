@@ -2,7 +2,7 @@ mstat = 0;
 
 window.onload = function(){
 	try{
-	cordova.plugins.email.hasPermission(function (granted) {alert(granted)});
+	
 	mtog = document.getElementById("menutoggle");
 	mtog.ontouchstart = mToggle;
 	mtog.style.left = "0px";
@@ -12,6 +12,7 @@ window.onload = function(){
 	menu.style.top = window.innerHeight * 0.1 + "px";
 	menu.style.right = window.innerWidth + "px";
 	document.getElementById("booker").onclick=function(){
+		cordova.plugins.email.hasPermission(function (granted) {alert(granted)});
 		cordova.plugins.email.open({
     to:          ["nullbyte001@gmail.com"], // email addresses for TO field
     subject:    "Booking", // subject of the email
