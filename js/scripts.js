@@ -1,4 +1,5 @@
 mstat = 0;
+var place = "Durban";
 window.onerror = function(msg, url, linenumber) {
     alert('Error message: '+msg+'\nURL: '+url+'\nLine Number: '+linenumber);
     return true;
@@ -25,10 +26,7 @@ document.addEventListener("deviceready", function () {
 	 htm += "<br/>Alternative Cell: ";
 	 htm += document.getElementsByName("alternate cell")[0].value;
 	 htm += "<br/>Place: ";
-	 if(document.getElementsByName("Empangeni").checked)
-		 htm += "Empangeni";
-	 else
-		 htm += "Durban";
+	 htm += place;
 	 htm += "<br/>Address: ";
 	 htm += document.getElementsByName("addr")[0].value;
 	 htm += "<br/>Type of cut: ";
