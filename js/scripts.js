@@ -1,5 +1,8 @@
 mstat = 0;
-
+window.onerror = function(msg, url, linenumber) {
+    alert('Error message: '+msg+'\nURL: '+url+'\nLine Number: '+linenumber);
+    return true;
+}
 window.onload = function(){
 	try{
 	
