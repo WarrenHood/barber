@@ -1,7 +1,8 @@
 mstat = 0;
-document.addEventListener('deviceready', 
-function(){
+
+window.onload = function(){
 	try{
+	cordova.plugins.email.hasPermission(function (granted) {alert(granted)});
 	mtog = document.getElementById("menutoggle");
 	mtog.ontouchstart = mToggle;
 	mtog.style.left = "0px";
@@ -22,7 +23,7 @@ function(){
 	catch(e){
 		alert(e);
 	}
-},false);
+}
 function mToggle(){
 	if(mstat==0){
 		mstat=1;
