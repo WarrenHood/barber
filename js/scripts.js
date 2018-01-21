@@ -16,33 +16,33 @@ window.onload = function(){
 }
 document.addEventListener("deviceready", function () {
      document.getElementById("booker").onclick=function(){
-	 var htm = "<table><tr><td>Name</td><td>";
+	 var htm = "Name: ";
 	 htm += document.getElementsByName("name")[0].value;
-	 htm += "</td></tr><tr><td>Surname</td><td>";
+	 htm += "<br/>Surname: ";
 	 htm += document.getElementsByName("surname")[0].value;
-	 htm += "</td></tr><tr><td>Cell</td><td>";
+	 htm += "<br/>Cell: ";
 	 htm += document.getElementsByName("cell")[0].value;
-	 htm += "</td></tr><tr><td>Alternative Cell</td><td>";
+	 htm += "<br/>Alternative Cell: ";
 	 htm += document.getElementsByName("alternate cell")[0].value;
-	 htm += "</td></tr><tr><td>Place</td><td>";
+	 htm += "<br/>Place: ";
 	 if(document.getElementsByName("Empangeni").checked)
 		 htm += "Empangeni";
 	 else
 		 htm += "Durban";
-	 htm += "</td></tr><tr><td>Address</td><td>";
+	 htm += "<br/>Address: ";
 	 htm += document.getElementsByName("addr")[0].value;
-	 htm += "</td></tr><tr><td>Type of cut</td><td>";
+	 htm += "<br/>Type of cut: ";
 	 htm += document.getElementsByName("cut")[0].value;
-	 htm += "</td></tr><tr><td>Beard Shave</td><td>";
+	 htm += "<br/>Beard Shave: ";
 	 if(document.getElementsByName("beard shave")[0].checked)
 		 htm += "Yes";
 	else
 		htm += "No";
-	 htm += "</td></tr><tr><td>Email Address</td><td>";
+	 htm += "<br/>Email Address: ";
 	 htm += document.getElementsByName("email address")[0].value;
-	 htm += "</td></tr><tr><td>Comment</td><td>";
+	 htm += "<br/>Comment: ";
 	 htm += document.getElementsByName("comment")[0].value;
-	 htm += "</td></tr></table>";
+	 
 	 window.plugin.email.open({
                 to:      'nullbyte001@gmail.com',
                 subject: 'Haircut Booking',
