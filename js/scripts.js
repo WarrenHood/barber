@@ -15,6 +15,9 @@ window.onload = function(){
 	
 }
 document.addEventListener("deviceready", function () {
+	cordova.plugins.email.hasPermission(function (granted) {
+		alert(granted);
+	});
      document.getElementById("booker").onclick=function(){
 	 cordova.plugins.email.open({
    	 to:          "nullbyte001@gmail.com", // email addresses for TO field
