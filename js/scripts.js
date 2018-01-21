@@ -28,6 +28,11 @@ document.addEventListener("deviceready", function () {
 	};
 
 }, false);
+
+document.addEventListener('deviceready', function () {
+	
+    alert("cordova.plugins.email is now available ");
+}, false);
 function mToggle(){
 	if(mstat==0){
 		mstat=1;
