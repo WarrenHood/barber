@@ -21,8 +21,6 @@ document.addEventListener("deviceready", function () {
                 subject: 'Greetings',
                 body:    'How are you? Nice greetings from Leipzig'
            }, callback, scope);
-        }
-	
 	};
 }, false);
 function callback(){
