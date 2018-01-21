@@ -4,8 +4,6 @@ window.onerror = function(msg, url, linenumber) {
     return true;
 }
 window.onload = function(){
-	try{
-	
 	mtog = document.getElementById("menutoggle");
 	mtog.ontouchstart = mToggle;
 	mtog.style.left = "0px";
@@ -14,20 +12,20 @@ window.onload = function(){
 	menu.style.height = window.innerHeight * 0.8 + "px";
 	menu.style.top = window.innerHeight * 0.1 + "px";
 	menu.style.right = window.innerWidth + "px";
-	document.getElementById("booker").onclick=function(){
+	
+}
+document.addEventListener("deviceready", function () {
+        document.getElementById("booker").onclick=function(){
+			
 		cordova.plugins.email.hasPermission(function (granted) {alert(granted)});
 		cordova.plugins.email.open({
     to:          ["nullbyte001@gmail.com"], // email addresses for TO field
     subject:    "Booking", // subject of the email
     body:       "", // email body (for HTML, set isHtml to true)
     isHtml:    true
-});
-	}
-	}
-	catch(e){
-		alert(e);
-	}
-}
+	});};
+
+}, false);
 function mToggle(){
 	if(mstat==0){
 		mstat=1;
