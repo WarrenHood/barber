@@ -15,24 +15,17 @@ window.onload = function(){
 	
 }
 document.addEventListener("deviceready", function () {
-        document.getElementById("booker").onclick=function(){
-			alert("clicked");
-			cordova.plugins.email.hasPermission(function (granted) {alert(granted);});
-		cordova.plugins.email.open({
-   	 to:          ["nullbyte001@gmail.com"], // email addresses for TO field
+     document.getElementById("booker").onclick=function(){
+	 cordova.plugins.email.open({
+   	 to:          "nullbyte001@gmail.com", // email addresses for TO field
    	 subject:    "Booking", // subject of the email
    	 body:       "", // email body (for HTML, set isHtml to true)
    	 isHtml:    true
 		});
 	
 	};
-
 }, false);
 
-document.addEventListener('deviceready', function () {
-	
-    alert("cordova.plugins.email is now available ");
-}, false);
 function mToggle(){
 	if(mstat==0){
 		mstat=1;
