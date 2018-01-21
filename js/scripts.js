@@ -1,5 +1,6 @@
 mstat = 0;
-window.onload = function(){
+document.addEventListener('deviceready', 
+function(){
 	try{
 	mtog = document.getElementById("menutoggle");
 	mtog.ontouchstart = mToggle;
@@ -21,7 +22,7 @@ window.onload = function(){
 	catch(e){
 		alert(e);
 	}
-}
+},false);
 function mToggle(){
 	if(mstat==0){
 		mstat=1;
