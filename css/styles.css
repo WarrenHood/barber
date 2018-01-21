@@ -6,12 +6,15 @@ overflow:hidden;
   background: url('../images/background.jpg') center center fixed; 
 }
 #menutoggle{
-  background:rgba(0,50,200,0.5);
-  z-index:1;
+  background:rgba(0,0,0,0.8);
+  z-index:2;
   height:fit-content;
   width:50px;
   border-top-right-radius:100%;
   border-bottom-right-radius:100%;
+  border-right:1px solid gold;
+  border-bottom:1px solid gold;
+  border-top:1px solid gold;
   font-size:5vh;
   color:white;
   text-align:center;
@@ -19,6 +22,8 @@ overflow:hidden;
   position:absolute;
 }
 #menu{
+  border-top: 1px solid gold;
+  z-index:1;
   position:absolute;
   background:rgba(0,0,0,.8);
   color:white;
@@ -35,4 +40,20 @@ h1{
   color:white;
   font-family:serif;
   background:rgba(0,0,0,0.8)
+}
+#menu h1 {
+  background:none;
+}
+#menu {
+  font-family:courier;
+}
+#menu input{
+  background:rgba(0,0,0,0.2);
+  border: 1px solid gold;
+  color:gold;
+}
+#menu textarea{
+  background:rgba(0,0,0,0.2);
+  color:gold;
+  border: 1px solid gold;
 }

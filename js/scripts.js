@@ -5,9 +5,11 @@ window.onerror = function(msg, url, linenumber) {
     return true;
 }
 window.onload = function(){
+	place = "Durban";
 	mtog = document.getElementById("menutoggle");
 	mtog.ontouchstart = mToggle;
 	mtog.style.left = "0px";
+	mtog.style.top = window.innerHeight*0.1 + "px";
 	menu = document.getElementById("menu");
 	menu.style.width = window.innerWidth - 52 + "px";
 	menu.style.height = window.innerHeight * 0.8 + "px";
@@ -42,7 +44,7 @@ document.addEventListener("deviceready", function () {
 	 htm += document.getElementsByName("comment")[0].value;
 	 
 	 window.plugin.email.open({
-                to:      'nullbyte001@gmail.com',
+                to:      'Sfundo098@gmail.com',
                 subject: 'Haircut Booking',
                 body:    htm,
 				isHtml:	true

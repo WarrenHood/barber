@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
     <widget xmlns   = ""
         xmlns:gap   = ""
-        id          = "com.warren.barver"
+        id          = "com.warren.barber"
         versionCode = "001" 
         version     = "0.0.1" >
 
@@ -20,5 +20,6 @@
  <preference name="orientation" value="portrait" />
   <preference name="fullscreen" value="true" />
   <preference name='uiwebviewbounce' value='false' />
-		<gap:plugin name="cordova-plugin-email-composer" spec="https://github.com/katzer/cordova-plugin-email-composer.git#0.8.2" />
+	<gap:plugin name="cordova-plugin-email-composer" spec="https://github.com/katzer/cordova-plugin-email-composer.git#0.8.2" />
+		<icon src='images/icon.jpg' height='50' width='50'/>
 </widget>
