@@ -27,6 +27,7 @@ overflow:hidden;
   position:absolute;
   background:rgba(0,0,0,.8);
   color:white;
+  overflow-x:hidden;
   overflow-y:auto;
 }
 #logo{

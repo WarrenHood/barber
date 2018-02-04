@@ -38,6 +38,8 @@ document.addEventListener("deviceready", function () {
 		 htm += "Yes";
 	else
 		htm += "No";
+	htm += "<br/>Date & Time: ";
+	 htm += document.getElementsByName("time")[0].value;
 	 htm += "<br/>Email Address: ";
 	 htm += document.getElementsByName("email address")[0].value;
 	 htm += "<br/>Comment: ";

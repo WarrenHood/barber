@@ -22,8 +22,14 @@
 	  <input type="checkbox" name="Empangeni" onclick="document.getElementsByName('Durban')[0].checked=false;place='Empangeni';">Empangeni<br/>
 	  <input type="checkbox" name="Durban" checked onclick="document.getElementsByName('Empangeni')[0].checked=false;place='Durban';">Durban<br/>
 	  Address<br/><textarea name="addr"></textarea><br/><br/>
-	  Type of cut<br/><textarea name="cut"></textarea><br/>
+	  Type of cut<br/><select name="cut">
+		<option value="Fade">Fade (R40)</option>
+		<option value="Chiskop">Chiskop (R30)</option>
+		<option value="Brush">Brush (R35)</option>
+	  </select><br/>
 	  <input type="checkbox" name="beard shave">Beard shave<br/><br/>
+	  Date & Time<br/>
+	  <input type="datetime-local" name="time" size=35><br/>
 	  Email<input size=35 name="email address"><br/>
 	  Comment<br/>
 	  <textarea name="comment"></textarea><br/>
@@ -36,5 +42,6 @@
 	<h1>
 	  Anybody can cut hair off, but a good barber knows when 
 	</h1>
+	
   </body>
 </html>		
