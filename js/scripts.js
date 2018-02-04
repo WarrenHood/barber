@@ -34,10 +34,7 @@ document.addEventListener("deviceready", function () {
 	 htm += "<br/>Type of cut: ";
 	 htm += document.getElementsByName("cut")[0].value;
 	 htm += "<br/>Beard Shave: ";
-	 if(document.getElementsByName("beard shave")[0].checked)
-		 htm += "Yes";
-	else
-		htm += "No";
+	 htm += document.getElementsByName("beard shave")[0].value;
 	htm += "<br/>Date & Time: ";
 	 htm += document.getElementsByName("time")[0].value;
 	 htm += "<br/>Email Address: ";
